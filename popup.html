@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Submit</title>
+    <script src="popup.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h3 style=" text-align: center ">Jira Count</h3>
+    <p id="notification"></p>
+
+    <form action="https://docs.google.com/a/students.jkuat.ac.ke/forms/d/e/1FAIpQLScbsSMTZkI1irTOKsZz377Z7k8hd0VpD6fziG1QexAebqEoYg/formResponse" target="_self" method="POST" id="myForm">
+      <div class="dropdown">
+        <select id="ddselect">
+          <option value=""></option>
+          <option value="Victor Mutai">Victor Mutai</option>
+          <option value="Galgallo Wako">Galgallo Wako</option>
+          <option value="Eunice Kamar">Eunice Kamar</option>
+          <option value="Isaac Kenga">Isaac Kenga</option>
+          <option value="Norton Akenga">Norton Akenga</option>
+        </select>
+        <input id="ddinput" type="hidden" class="input-hidden">
+      </div>
+
+      <div class="pageurl">
+        <input id="pageUrl" type="hidden" class="input-hidden">
+      </div>
+
+      <div class="radio">
+        <input type="radio" name="type" id="typeKenyan" class="radio" value="Kenya/Sales/Expedite">Kenyan
+        <input type="radio" name="type" id="typeMarine" class="radio" value="Marin-Reviewed">Marin
+        <input id="radioInput" type="hidden" class="input-hidden">
+      </div>
+
+      <button type="button" id="button">Submit</button>
+
+    </form>
+
+  </body>
+</html>

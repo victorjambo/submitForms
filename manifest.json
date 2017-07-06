@@ -1,0 +1,30 @@
+{
+  "name": "Jira Count",
+  "description": "Submit to google forms",
+  "version": "1.2.0",
+
+  "browser_action": {
+      "default_popup": "popup.html"
+   },
+
+   "icons": {
+     "16": "icon.png",
+     "48": "icon.png",
+     "128": "icon.png"
+   },
+
+  "manifest_version": 2,
+
+  "permissions": [ "tabs", "activeTab" ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jquery.js", "popup.js"],
+    "matches": ["https://jira.glassdoor.com/browse/*"]
+  }]
+}
